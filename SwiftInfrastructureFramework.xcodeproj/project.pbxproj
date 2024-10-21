@@ -11,6 +11,14 @@
 		DEF8DA332CC6BF500041E284 /* SwiftInfrastructureFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF8DA282CC6BF4F0041E284 /* SwiftInfrastructureFramework.framework */; };
 		DEF8DA382CC6BF500041E284 /* SwiftInfrastructureFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8DA372CC6BF500041E284 /* SwiftInfrastructureFrameworkTests.swift */; };
 		DEF8DA392CC6BF500041E284 /* SwiftInfrastructureFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF8DA2B2CC6BF4F0041E284 /* SwiftInfrastructureFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEF8DA532CC6BF840041E284 /* APIStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8DA422CC6BF810041E284 /* APIStats.swift */; };
+		DEF8DA542CC6BF840041E284 /* APIURLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8DA432CC6BF810041E284 /* APIURLComponents.swift */; };
+		DEF8DA552CC6BF840041E284 /* MonitoredAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8DA442CC6BF810041E284 /* MonitoredAPICall.swift */; };
+		DEF8DA562CC6BF840041E284 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8DA472CC6BF820041E284 /* User.swift */; };
+		DEF8DA572CC6BF840041E284 /* UserOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8DA482CC6BF820041E284 /* UserOperations.swift */; };
+		DEF8DA582CC6BF840041E284 /* UserConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8DA4B2CC6BF830041E284 /* UserConfiguration.swift */; };
+		DEF8DA592CC6BF840041E284 /* ThreadSafeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8DA4E2CC6BF840041E284 /* ThreadSafeCollection.swift */; };
+		DEF8DA5A2CC6BF840041E284 /* ThreadSafeCollectionPrioritizedWrites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8DA4F2CC6BF840041E284 /* ThreadSafeCollectionPrioritizedWrites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,14 @@
 		DEF8DA2C2CC6BF4F0041E284 /* SwiftInfrastructureFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftInfrastructureFramework.docc; sourceTree = "<group>"; };
 		DEF8DA322CC6BF500041E284 /* SwiftInfrastructureFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftInfrastructureFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF8DA372CC6BF500041E284 /* SwiftInfrastructureFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftInfrastructureFrameworkTests.swift; sourceTree = "<group>"; };
+		DEF8DA422CC6BF810041E284 /* APIStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIStats.swift; sourceTree = "<group>"; };
+		DEF8DA432CC6BF810041E284 /* APIURLComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIURLComponents.swift; sourceTree = "<group>"; };
+		DEF8DA442CC6BF810041E284 /* MonitoredAPICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoredAPICall.swift; sourceTree = "<group>"; };
+		DEF8DA472CC6BF820041E284 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DEF8DA482CC6BF820041E284 /* UserOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserOperations.swift; sourceTree = "<group>"; };
+		DEF8DA4B2CC6BF830041E284 /* UserConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfiguration.swift; sourceTree = "<group>"; };
+		DEF8DA4E2CC6BF840041E284 /* ThreadSafeCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadSafeCollection.swift; sourceTree = "<group>"; };
+		DEF8DA4F2CC6BF840041E284 /* ThreadSafeCollectionPrioritizedWrites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadSafeCollectionPrioritizedWrites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,10 @@
 		DEF8DA2A2CC6BF4F0041E284 /* SwiftInfrastructureFramework */ = {
 			isa = PBXGroup;
 			children = (
+				DEF8DA4D2CC6BF830041E284 /* AB_Testing */,
+				DEF8DA462CC6BF810041E284 /* CallMonitoring */,
+				DEF8DA522CC6BF840041E284 /* ThreadSafeCollections */,
+				DEF8DA4A2CC6BF820041E284 /* User */,
 				DEF8DA2B2CC6BF4F0041E284 /* SwiftInfrastructureFramework.h */,
 				DEF8DA2C2CC6BF4F0041E284 /* SwiftInfrastructureFramework.docc */,
 			);
@@ -83,6 +103,82 @@
 				DEF8DA372CC6BF500041E284 /* SwiftInfrastructureFrameworkTests.swift */,
 			);
 			path = SwiftInfrastructureFrameworkTests;
+			sourceTree = "<group>";
+		};
+		DEF8DA452CC6BF810041E284 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8DA422CC6BF810041E284 /* APIStats.swift */,
+				DEF8DA432CC6BF810041E284 /* APIURLComponents.swift */,
+				DEF8DA442CC6BF810041E284 /* MonitoredAPICall.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DEF8DA462CC6BF810041E284 /* CallMonitoring */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8DA452CC6BF810041E284 /* src */,
+			);
+			path = CallMonitoring;
+			sourceTree = "<group>";
+		};
+		DEF8DA492CC6BF820041E284 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8DA472CC6BF820041E284 /* User.swift */,
+				DEF8DA482CC6BF820041E284 /* UserOperations.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DEF8DA4A2CC6BF820041E284 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8DA492CC6BF820041E284 /* src */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		DEF8DA4C2CC6BF830041E284 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8DA4B2CC6BF830041E284 /* UserConfiguration.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DEF8DA4D2CC6BF830041E284 /* AB_Testing */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8DA4C2CC6BF830041E284 /* src */,
+			);
+			path = AB_Testing;
+			sourceTree = "<group>";
+		};
+		DEF8DA502CC6BF840041E284 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8DA4E2CC6BF840041E284 /* ThreadSafeCollection.swift */,
+				DEF8DA4F2CC6BF840041E284 /* ThreadSafeCollectionPrioritizedWrites.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DEF8DA512CC6BF840041E284 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		DEF8DA522CC6BF840041E284 /* ThreadSafeCollections */ = {
+			isa = PBXGroup;
+			children = (
+				DEF8DA502CC6BF840041E284 /* src */,
+				DEF8DA512CC6BF840041E284 /* tests */,
+			);
+			path = ThreadSafeCollections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF8DA592CC6BF840041E284 /* ThreadSafeCollection.swift in Sources */,
+				DEF8DA552CC6BF840041E284 /* MonitoredAPICall.swift in Sources */,
+				DEF8DA532CC6BF840041E284 /* APIStats.swift in Sources */,
+				DEF8DA542CC6BF840041E284 /* APIURLComponents.swift in Sources */,
+				DEF8DA582CC6BF840041E284 /* UserConfiguration.swift in Sources */,
+				DEF8DA562CC6BF840041E284 /* User.swift in Sources */,
+				DEF8DA572CC6BF840041E284 /* UserOperations.swift in Sources */,
+				DEF8DA5A2CC6BF840041E284 /* ThreadSafeCollectionPrioritizedWrites.swift in Sources */,
 				DEF8DA2D2CC6BF4F0041E284 /* SwiftInfrastructureFramework.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +515,7 @@
 		DEF8DA402CC6BF500041E284 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XHDE7GW3RL;
@@ -427,6 +532,7 @@
 		DEF8DA412CC6BF500041E284 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XHDE7GW3RL;
